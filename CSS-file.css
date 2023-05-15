@@ -1,0 +1,472 @@
+
+/*.Head_Pic{d-c
+  height: 600px;  height of container 
+  object-fit: cover;}
+  
+  .Head_Pic{
+  margin: 10px auto;
+  background-color: rgb(14, 10, 228);
+}
+.checkbtn{
+  color: rgb(255, 255, 255);
+  font-size: 3vw;
+  padding: 0.3vw 3vw;  Kolla padding logga
+  font-weight: bold;
+  line-height: 6.45vw;
+  margin-right: 1vw;
+  border-radius: .4vw;
+  /*padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  cursor: pointer;
+  float: right;
+  display: none;
+}
+@media (max-width: 1000px) {
+ label.logo{
+   font-size: 3vw;
+   padding-left: 3.5vw;
+ }
+ div ul li{
+   font-weight: bold;
+   padding-right: 0.2vw;
+ }
+}
+@media (max-width: 600px){
+  label.bars{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:rgb(158, 155, 155);
+    top: 15vw;
+    left: -100%;
+    text-align: center;
+    transition: all .5s ease;
+  }
+  div ul li{
+    display: block;
+  }
+  div ul li a{
+    font-size: 3vw;
+  }
+  a:hover,a.active  {
+    background: none;
+  }
+  li.hover.active{
+    background: none;
+    color: rgb(255, 255, 255);
+  }
+}
+label.bars:hover{
+    background-color: rgb(238, 10, 52);
+    transition: .3 ease;
+    float: ; 
+  }
+  .Menue{
+    background: rgb(206, 0, 38);
+    height: 7vw;
+    width: 100%;  
+    position: fixed;
+    margin-bottom: 20vw; 
+     
+} 
+div ul{
+    float: right;
+    margin-right: 1vw;
+}
+div ul li{
+    display: inline-block;
+    line-height: 6.5vw;
+    margin: 0 0.3vw;  
+    font-weight: bold; 
+}
+div ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 1.25vw;
+    padding: 1vw 0.5vw;
+    border-radius: .4vw;
+    text-transform: uppercase;  
+}
+div.Menue:hover a:hover{
+  background: rgb(238, 10, 52);
+  transition: .3s ease;
+}
+ 
+*/
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Arvo, sans-serif;
+}
+.navbar{ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 14px;
+}
+.nav-menu{ 
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;  
+  background-color: rgb(206, 0, 38);
+}
+.nav-branding{
+      color: rgb(255, 255, 255);
+      font-size: 3vw;
+      line-height: 3.5vw;
+      padding-left: 3.5vw;
+      font-weight: bold;     
+}
+.nav-link{
+  transition: 0.3s ease;
+}
+.nav-link:hover{
+  background: rgb(238, 10, 52);
+  transition: .3s ease;
+}
+.hamburger{
+  display: none; /*Film display:none*/
+  cursor: pointer;
+  float:  right;
+}
+.hamburger:hover{
+  background: rgb(238, 10, 52);
+  transition: .3s ease;
+}
+.bar{
+  display: block; /*Film display:block*/
+  width: 3.8vw;
+  height: 0.5vw;
+  margin: 0.7vw auto;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.4;
+}
+@media(max-width:768px){
+  .hamburger{
+   display: block;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+   transform: translateY(1vw) rotate(45deg);
+ }
+ .hamburger.active .bar:nth-child(3){
+   transform: translateY(-1.45vw) rotate(-45deg);
+ }
+ .nav-menu{
+   position: fixed;
+   left: -100%;
+   top: 5.7vw;
+   gap: 0;
+   flex-direction: column;
+   width: 100%;
+   text-align: center;
+   transition: 0.5s;
+ }
+ .nav-item{
+   margin: 16px 0; 
+ }
+ .nav-menu.active{
+   left: 0;
+ }
+}
+header{
+  background-color: rgb(206, 0, 38);
+}
+a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.5vw;
+  padding: 1vw 0.5vw;
+  border-radius: .4vw;  
+}
+.navbar li {
+    display: inline;
+    list-style: none;  
+    text-transform: uppercase;
+    line-height: 6.5vw;
+    margin: 0 .3vw;  
+    font-weight: bold; 
+} 
+body{
+    font-family: Arvo, sans-serif;
+    background-color: rgba(239,231,217,1);
+} 
+.Head_pic{
+  padding-top: 2vw;
+}
+.Menue_Under_Text_R1{
+  margin: 1vw 11vw;
+  color: rgb(206, 0, 38);
+  padding-top: 4vw;
+  font-weight: bolder;
+  font-size: 3vw;
+  text-align: center;
+}
+.Menue_Under_Text{
+  margin: 0 13vw;
+  margin-top: 0;
+  margin-bottom: 3vw;
+  text-align: center;
+  font-size: 2vw;  
+}
+.Boende{  
+  text-align: center;
+  height: 20vw;
+  display: inline-block;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding-left:  2vw;
+  padding-right:  2vw;
+  padding-top: 10vw;
+  padding-bottom: 30vw;
+  width: 29vw; 
+}
+.Boende h5{
+  font-size: 2vw;
+  font-weight: bold;
+}
+.Boende p{
+  font-size: 1.5vw;
+}
+.Food{ 
+  text-align: center;
+  height: 20vw;
+  display: inline-block;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding-left:  2vw;
+  padding-right:  2vw;
+  padding-top: 10vw;
+  padding-bottom: 30vw;
+  width: 29vw; 
+}
+.Food h5{
+  font-size: 2vw;
+  font-weight: bold;
+}
+.Food p{
+  font-size: 1.5vw;
+}
+.Bad{
+  text-align: center;
+  height: 20vw;
+  display: inline-block;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding-left:  2vw;
+  padding-right:  2vw;
+  padding-top: 10vw;
+  padding-bottom: 30vw;
+  width: 29vw;
+}
+.Bad h5{
+  font-size: 2vw;
+  font-weight: bold;
+}
+.Bad p{
+  font-size: 1.5vw;
+}
+.Endnavbar{
+  text-align: center;
+  width: 100%;
+  margin-top: 10vw;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  background-color: rgb(202, 202, 202);
+  font-size: 1.4vw;  
+}
+.Endnavbar ul a{
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding-right: 5vw;
+  font-size: 1.4vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+div.Endnavbar:hover a:hover{
+  background-color: rgb(202, 202, 202);
+  transition: .3s ease; 
+}
+/*---------------------------------------------------------------*/
+/*Boende*/
+.boende_headPic{
+  padding-top: 2vw;
+}
+.boende_h1{
+  margin: 2vw 11vw;
+  color: rgb(206, 0, 38);;
+  padding-top: 1vw;
+  font-weight: bolder;
+  font-size: 3vw;
+  text-align: center; 
+}
+.boende_t2{
+  margin: 0 13vw;
+  margin-top: 0;
+  margin-bottom: 3vw;
+  text-align: center;
+  font-size: 1.6vw;
+  padding-bottom: 1vw;
+}
+.boende_t3{
+  margin: 0 13vw;
+  margin-top: 0;
+  margin-bottom: 3vw;
+  text-align: center;
+  font-size: 1.6vw;
+}
+.boende_h2{
+  margin: 1vw 11vw;
+  padding-top: 1vw;
+  padding-bottom: 2vw;
+  font-weight: bolder;
+  font-size: 2vw;
+  text-align: center; 
+}
+.boende_t4{
+  margin: 0 13vw;
+  margin-top: 0;
+  margin-bottom: 3vw;
+  text-align: center;
+  font-size: 1.6vw;
+  padding-bottom: 5vw;
+}
+/*---------------------------------------------------------------*/
+/*Äta*/
+.ata_headPic{
+  padding-top: 2vw;
+}
+.ata_h1{
+  margin: 2vw 11vw;
+  color: rgb(206, 0, 38);
+  padding-top: 1vw;
+  font-weight: bolder;
+  font-size: 3vw;
+  text-align: center;  
+}
+.ata_t1{
+  margin: 0 13vw;
+  margin-top: 0;
+  margin-bottom: 1vw;
+  text-align: center;
+  font-size: 1.6vw;
+  padding-bottom: 1vw; 
+}
+.ata_t2{
+  margin: 0 13vw;
+  margin-top: 0;
+  margin-bottom: 3vw;
+  text-align: center;
+  font-size: 1.6vw;
+  padding-bottom: 1vw;
+}
+/*---------------------------------------------------------------*/
+/*Göra*/
+.gora_HeadPic{
+  padding-top: 2vw;
+}
+.gora_h1{
+  margin: 2vw 11vw;
+  color: rgb(206, 0, 38);;
+  padding-top: 1vw;
+  font-weight: bolder;
+  font-size: 3vw;
+  text-align: center; 
+}
+.gora_t1{
+  margin: 0 13vw;
+  margin-top: 0;
+  margin-bottom: 1vw;
+  text-align: center;
+  font-size: 1.6vw;
+  padding-bottom: 1vw; 
+}
+/*---------------------------------------------------------------*/
+/*Besök*/
+.besok_t1 h1{
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5vw;
+}
+.besok_t1{
+  padding-top: 20vw;
+  padding-bottom: 20vw;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5vw;
+}
+.besok_t2 {
+  padding-left: 10vw;
+  padding-right: 15vw;
+  padding-bottom: 5vw;
+  font-size:  2vw;
+}
+.besok_t2 h5{
+  padding-bottom: 1vw;
+  font-size: 2.5vw;
+  display: inline-block;
+}
+.besok_t2 p{
+  padding: 0.5vw;
+  font-size: 2vw;
+}
+.besok_pic_map{
+  padding: 2vw 2vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  text-align: right;
+  width: 0%;
+}
+ 
+ 
+/*Boka*/
+.boka_headPic{
+  padding-top: 2vw;
+}
+.boka_h1{
+  margin: 2vw 11vw;
+  color: rgb(206, 0, 38);
+  padding-top: 1vw;
+  font-weight: bolder;
+  font-size: 3vw;
+  text-align: center;  
+}
+.boka_t1{
+  margin: 0 13vw;
+  margin-top: 0;
+  margin-bottom: 1vw;
+  text-align: center;
+  font-size: 1.6vw;
+  padding-bottom: 1vw; 
+}
+.boka_t2{
+  margin: 0 13vw;
+  margin-top: 0;
+  margin-bottom: 3vw;
+  text-align: center;
+  font-size: 1.6vw;
+  padding-bottom: 1vw;
+}
+/*---------------------------------------------------------------*/  
+  
+
+
+
+
+
+
+  
+
+
+
